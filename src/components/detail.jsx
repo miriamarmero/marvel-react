@@ -23,7 +23,9 @@ class Detail extends Component{
     render(){
         if(this.state.character){
             return <div>
-                <Link to="/characters">Home</Link>
+                <Link to="/characters">Personajes</Link>
+                <Link to="/comics">Comics</Link>
+                <Link to="/">Home</Link>
                 <h1>{this.state.character.name}</h1>
                 <img src={this.state.character.thumbnail.path + '.jpg'} alt=""/>
                 <Link to={"/characters/" + this.characterId + "/comics"}>Comics en los que aparece</Link>

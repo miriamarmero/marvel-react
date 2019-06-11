@@ -23,8 +23,9 @@ class DetailComic extends Component{
     render(){
         if(this.state.comic){
             return <div>
-                <Link to="/characters">Home</Link>
+                <Link to="/characters">Personajes</Link>
                 <Link to="/comics">Comics</Link>
+                <Link to="/">Home</Link>
                 <h1>{this.state.comic.title}</h1>
                 <img src={this.state.comic.thumbnail.path + '.jpg'} alt=""/>
                 <p>{this.state.comic.description}</p>

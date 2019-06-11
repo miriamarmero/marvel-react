@@ -24,7 +24,9 @@ class ComicCharacters extends Component{
     render(){
         if(this.state.characters){
             return <div>
-                <Link to="/characters">Home</Link>
+                <Link to="/characters">Personajes</Link>
+                <Link to="/comics">Comics</Link>
+                <Link to="/">Home</Link>
                 {this.state.characters.map((character, i) => <div key={i}>
                    <Link to={'/characters/' + character.id}><h2>{character.name}</h2></Link>
                 </div>)}
